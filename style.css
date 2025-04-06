@@ -1,0 +1,134 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: Fraunces; 
+}
+.image-container{
+    margin:0;
+    padding:0;
+    border-radius: 10px 0 0 10px;
+}
+.card{
+    background-color: white;
+    border-radius: 10px;
+    height:450px;
+    width:550px;
+    display:flex;
+    margin:20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+p{
+    font-size: 14px;
+    margin:5px;
+}
+.text{
+    margin:20px;
+    overflow: scroll;
+}
+.new{
+    color:hsl(158,36%,37%);
+    font-size: 35px;
+    display: inline;
+
+}
+.price{
+    margin:0;
+    columns: 1;
+}
+.old{
+    text-decoration: line-through;
+    display:inline-flex;
+    justify-content: right;
+    margin:0;
+    
+}
+.container{
+    display:flex;
+    justify-content: center;
+    flex-shrink: 2;
+    padding: 100px;
+}
+
+.cart{
+    background-color: hsl(158,36%,37%);
+    color: hsl(0, 0%, 100%);
+    padding: 10px 50px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    display: block;
+    
+}
+.description{
+    font-family:Montserrat;
+}
+.title{
+    font-family:Montserrat;
+    letter-spacing: 2px;
+    color: hsl(228, 12%, 48%);
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+.cart:hover{
+    background-color: hsl(158,42%,18%);
+    margin-top: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+@media screen and (max-width:610px){
+    .container{
+        display:flex;
+        justify-content: center;
+        flex-shrink: 2;
+        padding: 100px;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center the content horizontally */
+        height: auto; /* Allow height to adjust based on content */
+        margin: 0; /* Remove margin to avoid extra space */
+        width: 100%; /* Ensure it takes full width on smaller screens */
+        object-fit: scale-down; /* Ensure images and text fit well */
+
+    }
+    .text{
+    
+        position: relative;
+        max-height: 200px;
+        height: auto;
+        margin: 0 20px; /* Adjust margin for smaller screens */
+        width: 90%;
+        background-color: white; /* Ensure text background is white for readability */
+        padding: 10px; /* Add padding for better readability */
+        box-sizing: border-box; /* Ensure padding is included in width */
+        object-fit: scale-down; /* Ensure text fits well */;
+
+    }
+    .card{
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        height: auto;
+        margin: 20px auto; /* Center the card horizontally */
+        padding: 0px; /* Add padding for better spacing */
+        border-radius: 10px; /* Keep the border radius for mobile view */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+        object-fit: scale-down;
+    }
+    .image-container {
+        width: 100%;
+        max-height:400px;
+        margin: 0 auto; /* Make the image container responsive */
+        height: auto;
+        border-radius: 10px 10px 0 0; /* Adjusted for mobile view */
+        margin-bottom: 20px; /* Space between image and text */
+        object-fit: cover;
+    }
+    body{
+        overflow-x: hidden;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+    
